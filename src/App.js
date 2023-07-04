@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, TextField, Button } from '@material-ui/core';
+import Header from './components/Header'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +45,7 @@ const App = () => {
       <Typography variant="h4" component="h1" gutterBottom>
         Solid Workout App
       </Typography>
+      <Header />
       <form className={classes.form} onSubmit={handleSubmit}>
         <TextField
           className={classes.input}

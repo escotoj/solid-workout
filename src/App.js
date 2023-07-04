@@ -50,15 +50,16 @@ const App = () => {
         <TextField
           className={classes.input}
           variant="outlined"
-          label="Workout"
+          label="Log Workout"
           value={inputValue}
           onChange={handleInputChange}
         />
         <Button
-          className={classes.submitButton}
-          variant="contained"
-          color="primary"
-          type="submit"
+            className={classes.submitButton}
+            variant="contained"
+            color="success"
+            type="submit"
+            sx={{ backgroundColor: 'black' }}
         >
           Log
         </Button>

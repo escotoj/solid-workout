@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, TextField, Button } from '@material-ui/core';
+import { Typography, TextField, Button, Paper } from '@material-ui/core';
 import Header from './components/Header'
 
 const useStyles = makeStyles((theme) => ({
@@ -65,12 +65,12 @@ const App = () => {
         </Button>
       </form>
       {submittedValue && (
-        <div className={classes.submittedValue}>
-          <Typography variant="h6" component="h2" gutterBottom>
-            Workout:
-          </Typography>
-          <Typography variant="body1">{submittedValue}</Typography>
-        </div>
+        <Paper className={classes.submittedValue}>
+        <Typography variant="h6" component="h2" gutterBottom>
+          Workout:
+        </Typography>
+        <Typography variant="body1">{submittedValue}</Typography>
+      </Paper>
       )}
     </div>
   );
